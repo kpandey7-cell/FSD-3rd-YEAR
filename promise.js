@@ -1,5 +1,5 @@
 const MyPromise = new Promise((resolve, reject)=>{
-    let age =19;
+    let age =17 ;
     if(age>=18){
         resolve('Eligible for vote');
     }
@@ -10,7 +10,7 @@ const MyPromise = new Promise((resolve, reject)=>{
 
 const checkEligibility = () =>{
    try{
-    const msg = MyPromise;
+    const msg = await MyPromise;
     console.log(msg);
    } 
    catch(error){
