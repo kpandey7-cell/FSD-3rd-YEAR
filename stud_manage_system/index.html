@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Management System</h1>
+
+    <form>
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="studentName">Name</label>
+                <input type="text" id="studentName" required>
+            </div>
+            <div class="form-group">
+                <label for="rollNo">Roll Number</label>
+                <input type="text" id="rollNo" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Course</label>
+                <select id="course">
+                    <option value="">Select Course</option>
+                    <option value="BTech">B.Tech</option>
+                    <option value="BCA">BCA</option>
+                    <option value="MCA">MCA</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="marks">Marks</label>
+                <input type="number" id="marks" min="0" max="100" required>
+            </div>
+        </div>
+        
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    <div class="search-group">
+        <input type="text" placeholder="Search by Name/Roll Number">
+    </div>
+
+    <div class="stats-container">
+        <div class="stat-box">Total Students: <span id="totalStudents">0</span></div>
+        <div class="stat-box">Average Marks: <span id="avgMarks">0</span></div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Marks</th>
+                <th>Grade</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        
+        <body>
+            <tr>
+                <td>101</td>
+                <td>Kanishk Pandey</td>
+                <td>B.Tech</td>
+                <td>85</td>
+                <td>A</td>
+                <td class="action-btns">
+                    <button class="btn-edit">Edit Entry</button>
+                    <button class="btn-delete">Delete Entry</button>
+                </td>
+            </tr>
+        </body>
+    </table>
+</div>
+
+<script src="student.js"></script>
+
+</body>
+</html>

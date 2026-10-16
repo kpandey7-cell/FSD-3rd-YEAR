@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1 class="main-title">Task Manager</h1>
+
+        <div class="dashboard-grid">
+            
+            <div class="workspace-panel">
+                <div class="input-row">
+                    <input type="text" id="task-input" placeholder="Enter Your Task">
+                    <button id="add-btn">Add Task</button>
+                </div>
+
+                <div class="counters-row">
+                    <div class="counter-box">
+                        <span class="count-num" id="total-count">3</span>
+                        <span class="count-label">Total Task</span>
+                    </div>
+                    <div class="counter-box">
+                        <span class="count-num" id="completed-count">2</span>
+                        <span class="count-label">Completed</span>
+                    </div>
+                    <div class="counter-box">
+                        <span class="count-num" id="pending-count">1</span>
+                        <span class="count-label">Pending</span>
+                    </div>
+                </div>
+
+                <div class="filters-row">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Pending</button>
+                    <button class="filter-btn">Completed</button>
+                </div>
+
+                <ul class="task-list">
+                    <li class="task-item completed">
+                        <input type="checkbox" checked id="task-1">
+                        <label for="task-1">ML Assignment</label>
+                    </li>
+                    <li class="task-item">
+                        <input type="checkbox" id="task-2">
+                        <label for="task-2">Coding</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-panel">
+                <h3>Task Completed Date</h3>
+                <ol class="date-list">
+                    <li>ML Assignment - 2024-06-10</li>
+                    <li>Coding - 2024-06-11</li>
+                    <li>Design - 2024-06-12</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
